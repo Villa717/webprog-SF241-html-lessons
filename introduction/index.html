@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>WEBPROG SF241 Introduction</title>
+    <title>WEBPROG SF241 Introduction</title>
+    <link rel="stylesheet" href="css/flexbox.css">
 </head>
-<link rel="stylesheet" href="css/flexbox.css">
 <body>
 
-<h1>Personal Profile Web page</h1>
- <h2>By Andrei Antonio G. Villa</h2>
-<p>
+    <header>
+        <h1>Personal Profile Web page</h1>
+        <h2>By Andrei Antonio G. Villa</h2>
+    </header>
 
-About Me<br>
- - Hello everyone!
- ( Do not include birthdate / age / contact information)<br>
-Education / Achievements<br>
-Course <br> 
- Bachelor of Science in Computer Science With Specialization in Cyber Security and Forensics
-IT Experience <br>
- Jave, Python, HTML, Kali Linux, CSS, AI
-Hobbies and Interests <br>
- - SLeeping 
- - Drinking
- - Driving
- - Going outside my home
- - Cycling
- - Running
-Goals in life <br>
- - To go to Alaska or anywhere near the pacific northwest
-Picture Gallery<br>
-<img src="profile.jpg.jpg" alt="Personal Profile Photo" width="500" height="500">
-</p>
-  <div class="container">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>  
-  <div>10</div>  
-</div> 
+    <div class="profile-wrapper">
+        
+        <div class="text-info">
+            <h3>About Me</h3>
+            <p>Hello everyone!</p>
+
+            <h3>Education / Achievements</h3>
+            <p><strong>Course:</strong> Bachelor of Science in Computer Science With Specialization in Cyber Security and Forensics</p>
+
+            <h3>IT Experience</h3>
+            <p>Java, Python, HTML, Kali Linux, CSS, AI</p>
+
+            <h3>Hobbies and Interests</h3>
+            <ul>
+                <li>Sleeping</li>
+                <li>Drinking</li>
+                <li>Driving</li>
+                <li>Going outside my home</li>
+                <li>Cycling</li>
+                <li>Running</li>
+            </ul>
+
+            <h3>Goals in life</h3>
+            <p>To go to Alaska or anywhere near the pacific northwest</p>
+        </div>
+
+        <div class="profile-image">
+            <img src="profile.jpg.jpg" alt="Personal Profile Photo">
+        </div>
+    </div>
+
+    <hr> 
+
+    <h3>Picture Gallery</h3>
+    <div class="gallery-container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>  
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>  
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>  
+        <div class="box">10</div>  
+    </div> 
 
 </body>
 </html>
