@@ -8,31 +8,29 @@
 
 <style>
   body {
-    background: linear-gradient(135deg, #4b0082, #2b004f, #1e0033);
+    background: linear-gradient(135deg, #3b0057, #240035, #150020);
     color: white;
     padding: 20px;
   }
 
-  .profile-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .profile-container img {
-    border-radius: 10px;
-    width: 300px;
-    height: auto;
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   h1, h2 {
     text-align: center;
   }
 
-  .content-box {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    border-radius: 10px;
+  .card {
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 </style>
 </head>
@@ -40,52 +38,54 @@
 <body>
 
 <h1>Personal Profile Web Page</h1>
-<h2>By Andrei G. Villa</h2>
+<h2>By Andrei A. G. Villa</h2>
 
-<div class="content-box">
-  <div class="profile-container">
-    
-    <!-- LEFT IMAGE -->
-    <img src="revenant.jpg" alt="Profile Photo">
+<img src="revenant.jpg" alt="Profile Photo" class="profile-pic">
 
-    <!-- RIGHT TEXT CONTENT -->
-    <div>
-      <p>
-        <strong>About Me</strong><br>
-        - Hello everyone! (Do not include birthdate / age / contact info)
-        <br><br>
+<br>
 
-        <strong>Education / Achievements</strong><br>
-        Bachelor of Science in Computer Science with Specialization in Cyber Security and Forensics
-        <br><br>
+<div class="container mt-4">
 
-        <strong>IT Experience</strong><br>
-        Java, Python, HTML, Kali Linux, CSS, AI
-        <br><br>
-
-        <strong>Hobbies & Interests</strong><br>
-        - Sleeping<br>
-        - Drinking<br>
-        - Driving<br>
-        - Going outside my home<br>
-        - Anything<br><br>
-
-        <strong>Goals in Life</strong><br>
-        - To go to Alaska or anywhere near the Pacific Northwest
-        <br><br>
-
-        <strong>Picture Gallery</strong><br>
-        <img src="profile.jpg.jpg" width="300" height="300" style="border-radius: 10px;">
-      </p>
-    </div>
-
+  <div class="card p-4 mb-3">
+    <h3>About Me</h3>
+    <p>- Hello everyone! (Do not include birthdate, age, or contact info)</p>
   </div>
+
+  <div class="card p-4 mb-3">
+    <h3>Education / Achievements</h3>
+    <p>
+      Bachelor of Science in Computer Science<br>
+      Specialization in Cyber Security and Forensics
+    </p>
+  </div>
+
+  <div class="card p-4 mb-3">
+    <h3>IT Experience</h3>
+    <p>Java, Python, HTML, CSS, Kali Linux, AI</p>
+  </div>
+
+  <div class="card p-4 mb-3">
+    <h3>Hobbies & Interests</h3>
+    <ul>
+      <li>Sleeping</li>
+      <li>Drinking</li>
+      <li>Driving</li>
+      <li>Going outside my home</li>
+      <li>Anything</li>
+    </ul>
+  </div>
+
+  <div class="card p-4 mb-3">
+    <h3>Goals in Life</h3>
+    <p>To go to Alaska or anywhere near the Pacific Northwest.</p>
+  </div>
+
 </div>
 
-<br><br>
+<br>
 
 <div class="container-fluid mt-3">
-  <h1 style="text-align:center;">Responsive Auto Layout Columns</h1>
+  <h2 class="text-center">Responsive Auto Layout Columns</h2>
   <p class="text-center">Bootstrap auto-layout example below.</p>
 
   <div class="container-fluid">
